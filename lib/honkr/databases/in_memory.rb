@@ -47,6 +47,12 @@ module Honkr
         User.new(attrs[:id], attrs[:username], attrs[:password])
       end
 
+      def get_user_by_username(user)
+        attrs = @users[username]
+        User.new(attrs[:id], attrs[:username], attrs[:password])
+        @user
+      end
+
     end
   end
 end
