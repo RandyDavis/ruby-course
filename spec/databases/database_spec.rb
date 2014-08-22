@@ -34,5 +34,6 @@ describe Honkr::Databases::InMemory do
 end
 
 describe Honkr::Databases::SQL do
+  # have an answer for this by tomorrow...tell what it means
   it_behaves_like 'a database'
 end
